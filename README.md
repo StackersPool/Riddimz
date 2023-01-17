@@ -14,6 +14,7 @@ The platform could also have a leaderboard feature that allows users to compete 
 
 Overall, a web3 karaoke project powered by Stacks using NFTs could offer a unique and engaging way for users to participate in karaoke online, while also providing a fair and transparent way for musicians to earn from their creations.
 
+
 # SPECIFICATIONS
 
 A web3 karaoke project powered by Stacks using NFTs (non-fungible tokens) could offer a unique and innovative way for users to participate in and engage with karaoke online.
@@ -28,4 +29,15 @@ The platform could also have a leaderboard feature that allows users to compete 
 
 Overall, a web3 karaoke project powered by Stacks using NFTs could offer a unique and engaging way for users to participate in karaoke online, while also providing a fair and transparent way for musicians to earn from their creations.
 
+
+# GOALS 
+Digital ownership and scarcity: NFTs allow users to own and trade unique digital assets, such as karaoke recordings, which can increase the perceived value of the content and foster a sense of community among users.
+
+Monetization: NFTs enable creators and rights holders to monetize their digital assets, such as karaoke recordings, through sales and royalties.
+
+Branding and marketing: NFTs can be used to create unique and memorable experiences for users, such as exclusive karaoke performances or limited-edition karaoke recordings, which can help to increase brand awareness and loyalty.
+
+Authenticity and provenance: NFTs provide a way to verify the authenticity and provenance of digital assets, such as karaoke recordings, which can help to protect the rights of creators and rights holders.
+
+Data collection: NFTs can be used to track data on user engagement, such as how often a karaoke recording is played or how much it sells for, which can be used to improve the user experience and inform business decisions.\
 
