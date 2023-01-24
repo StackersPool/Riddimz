@@ -150,3 +150,15 @@ Mobile compatibility: The platform should be compatible with mobile devices, so 
 
 It's worth noting that these are just a few examples of the features a web3 online karaoke platform could have, and the specific requirements will depend on the use case and target audience of the platform.
 
+# Equity:
+Some potential benefits for investors and crowdfunders of the online karaoke app built on the Stacks blockchain using NFTs (non-fungible tokens) could include:
+
+Ownership and provenance of digital assets: NFTs allow for the unique identification and ownership of digital assets, such as karaoke performances, within the app.
+
+Potential for appreciation in value: If the app and its NFTs gain popularity, the value of the NFTs (and thus the investment) could appreciate.
+
+Potential for revenue streams: The app could generate revenue through the sale of NFTs, which could be distributed to investors and crowdfunders as dividends.
+
+Transparency and security: The use of blockchain technology can provide increased transparency and security for transactions within the app.
+
+Community building: NFTs can foster a sense of community and engagement among users of the app, as they can collect and trade unique digital assets with each other.
