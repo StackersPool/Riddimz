@@ -122,3 +122,6 @@ Also, If the platform has a strong focus on tokenization, NFTs and cryptocurrenc
 
 Additionally, if the platform is able to establish partnerships and collaborations with popular music artists and labels, it may be able to attract users from all over the world.
 
+# DIFFERENCE FROM OTHER ONLINE KARAOKE PLATFORMS
+There are so many differences, Riddimz will hame from other Online karaoke platforms,People may prefer an online web3 karaoke built on blockchain for several reasons. One reason could be that it offers more transparency and security for transactions made within the platform, as all transactions are recorded on a decentralized, tamper-proof ledger. Additionally, an online web3 karaoke built on blockchain may offer more flexibility and accessibility for users, as they can access the platform from anywhere with an internet connection. Another potential benefit could be that it allows for more efficient and fair royalty distribution to creators, as smart contracts can automatically distribute royalties based on usage.
+
