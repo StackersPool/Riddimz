@@ -105,11 +105,7 @@ Staking: Platform can encourage users to hold platform's token and get rewarded 
 
 It is worth noting that the actual implementation will be highly dependent on the specifics of the project and the regulations in the jurisdiction it operates in.
 
-Subscription-based model: Charge users a monthly or annual fee to access the app's full feature set.
-
 In-app purchases: Offer virtual items or additional features that users can purchase within the app.
-
-Advertising: Partner with businesses to display ads within the app, either on a pay-per-click or pay-per-impression basis.
 
 Token Economy: Create a token for the app and allow users to purchase and use them to access certain features or to reward content creators.
 
