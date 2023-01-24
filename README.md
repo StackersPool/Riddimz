@@ -86,8 +86,24 @@ Solana: Solana is a high-performance blockchain network that can handle over 65,
 Ultimately, the best blockchain network for a web3 project will depend on the specific use case, the target audience, and the scalability, security, and cost requirements of the project. It's important to thoroughly evaluate the different options and choose the one that is most suitable for the project's needs.
 
 # REVENUE 
-write ho to make revenues from an online kareoke app being built on web 3 on the stacks blockchain
-There are several ways to generate revenue from an online karaoke app built on web3 and the Stacks blockchain:
+
+Subscription fees: Users can be charged a monthly or annual subscription fee to access the platform and all its features.
+
+Microtransactions: Users can purchase virtual currency or tokens that can be used to buy in-game items or access special features.
+
+Advertising: Advertisers can be charged to display their ads on the platform.
+
+Royalty collection and distribution: Smart contracts built on the blockchain can automatically collect and distribute royalties to creators based on usage.
+
+Referral fees: users can earn a percentage of fees when they refer others to the platform.
+
+Tokenization of assets: platform can tokenize assets like songs, performances, and items and allow them to be bought and sold on the open market.
+
+NFTs: Platform can allow users to buy and sell non-fungible tokens that represent unique items or experiences.
+
+Staking: Platform can encourage users to hold platform's token and get rewarded for their support.
+
+It is worth noting that the actual implementation will be highly dependent on the specifics of the project and the regulations in the jurisdiction it operates in.
 
 Subscription-based model: Charge users a monthly or annual fee to access the app's full feature set.
 
