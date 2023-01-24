@@ -16,9 +16,7 @@ Overall, a web3 karaoke project powered by Stacks using NFTs could offer a uniqu
 
 
 # SPECIFICATIONS
-
-state some unique functionalitys needed in a web3 online karaoke
-Here are some unique functionalities that a web3 online karaoke platform might include:
+Some unique functionalities that Riddimz karaoke platform might include:
 
 Decentralized voting and judging: A decentralized voting and judging system that allows users to vote and judge each other's performances using NFTs or other digital assets.
 
