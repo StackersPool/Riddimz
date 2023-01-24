@@ -192,3 +192,6 @@ Riddimz is a Blockchain technology can add value to a karaoke project built on w
 
 # USERS PLATFORM 
 A karaoke project could involve creating a platform for users to sing and share their performances, possibly with the use of non-fungible tokens (NFTs) to reward and incentivize participation. NFTs could be used to represent unique digital assets, such as a recording of a user's karaoke performance, which can be bought, sold, and traded on a blockchain. These digital assets could also be used to provide a way for users to showcase their talent and potentially gain fame and recognition in the karaoke community. Additionally, NFTs could be used as a form of digital currency within the platform to purchase items such as virtual costumes, backgrounds, and other digital assets.
+
+# TRANSACTION OF ROYALTYS
+A web3 karaoke app using blockchain technology and smart contracts could utilize smart contracts to handle transactions and payments for karaoke performances. The smart contract could automatically distribute royalties to the songwriters and performers, and handle the transfer of digital assets like karaoke tracks. Additionally, the app could use blockchain technology to provide a secure and transparent record of all transactions and performances on the platform.
