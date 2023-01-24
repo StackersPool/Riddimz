@@ -40,7 +40,7 @@ Interactivity with the audience: A feature that allows the performer to interact
 
 These functionalities are more unique and would differentiate the platform from the traditional karaoke platforms and would encourage more users to participate and engage with the platform.
 
-# GOALS 
+# NFT USECASES 
 Digital ownership and scarcity: NFTs allow users to own and trade unique digital assets, such as karaoke recordings, which can increase the perceived value of the content and foster a sense of community among users.
 
 Monetization: NFTs enable creators and rights holders to monetize their digital assets, such as karaoke recordings, through sales and royalties.
@@ -84,3 +84,20 @@ Polygon (formerly Matic Network): Polygon is a layer 2 scaling solution that all
 Solana: Solana is a high-performance blockchain network that can handle over 65,000 transactions per second, making it one of the most scalable blockchain networks available. It also has a very low transaction cost, making it suitable for projects that require high throughput and low transaction costs.
 
 Ultimately, the best blockchain network for a web3 project will depend on the specific use case, the target audience, and the scalability, security, and cost requirements of the project. It's important to thoroughly evaluate the different options and choose the one that is most suitable for the project's needs.
+
+# REVENUE 
+write ho to make revenues from an online kareoke app being built on web 3 on the stacks blockchain
+There are several ways to generate revenue from an online karaoke app built on web3 and the Stacks blockchain:
+
+Subscription-based model: Charge users a monthly or annual fee to access the app's full feature set.
+
+In-app purchases: Offer virtual items or additional features that users can purchase within the app.
+
+Advertising: Partner with businesses to display ads within the app, either on a pay-per-click or pay-per-impression basis.
+
+Token Economy: Create a token for the app and allow users to purchase and use them to access certain features or to reward content creators.
+
+Crowdfunding: Allow users to fund their favorite content creators, who will be rewarded with tokens or cryptocurrency.
+
+Sponsorship: Reach out to sponsors who might be interested in promoting their brand on the app.
+
