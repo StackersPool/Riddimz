@@ -125,3 +125,28 @@ Additionally, if the platform is able to establish partnerships and collaboratio
 # DIFFERENCE FROM OTHER ONLINE KARAOKE PLATFORMS
 There are so many differences, Riddimz will hame from other Online karaoke platforms,People may prefer an online web3 karaoke built on blockchain for several reasons. One reason could be that it offers more transparency and security for transactions made within the platform, as all transactions are recorded on a decentralized, tamper-proof ledger. Additionally, an online web3 karaoke built on blockchain may offer more flexibility and accessibility for users, as they can access the platform from anywhere with an internet connection. Another potential benefit could be that it allows for more efficient and fair royalty distribution to creators, as smart contracts can automatically distribute royalties based on usage.
 
+# FEATURES
+The online karaoke platform would likely require the following features:
+
+User registration and authentication: Users should be able to create an account and log in to the platform securely, this can be achieved by using decentralized identity solution such as ERC-725 or ERC-735
+
+Audio and video recording and storage: Users should be able to record and upload their karaoke performances to the platform, and the platform should have a decentralized storage solution to store the recordings in a secure and decentralized manner.
+
+NFT management: The platform should be able to create, manage, and distribute NFTs that represent users' karaoke performances. Users should be able to buy, sell, and trade these NFTs on the platform.
+
+Virtual currency: The platform should have a virtual currency system that allows users to purchase items such as virtual costumes, backgrounds, and other digital assets.
+
+Leaderboard and ranking system: The platform should have a ranking system that allows users to see how they compare to other users and to showcase their talent.
+
+Social features: The platform should have social features such as the ability to follow other users, to leave comments, and to share karaoke performances on other platforms.
+
+Search and discovery: The platform should have a search and discovery feature that allows users to find and discover new karaoke performances and users.
+
+Admin Panel: Platform should have an admin panel that allows the platform owner to manage the users, NFTs, and other digital assets on the platform.
+
+Security and privacy: The platform should have the necessary security measures in place to protect users' personal information and to prevent unauthorized access to their accounts and digital assets.
+
+Mobile compatibility: The platform should be compatible with mobile devices, so users can access the platform and record karaoke performances using their smartphones or tablets.
+
+It's worth noting that these are just a few examples of the features a web3 online karaoke platform could have, and the specific requirements will depend on the use case and target audience of the platform.
+
