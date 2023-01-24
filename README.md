@@ -101,3 +101,12 @@ Crowdfunding: Allow users to fund their favorite content creators, who will be r
 
 Sponsorship: Reach out to sponsors who might be interested in promoting their brand on the app.
 
+# TARGET AUDIENCE
+It is difficult to predict where most users of an online web3 karaoke built on blockchain technology would be from, as it would depend on a variety of factors such as the target market, marketing and promotion efforts, and the availability of the platform in different regions.
+
+However, it is likely that the platform would initially attract users from regions where internet access and smartphone usage is high, as well as from regions where karaoke is popular.
+
+Also, If the platform has a strong focus on tokenization, NFTs and cryptocurrency, it could also attract users from countries where cryptocurrency usage and adoption are more prevalent.
+
+Additionally, if the platform is able to establish partnerships and collaborations with popular music artists and labels, it may be able to attract users from all over the world.
+
