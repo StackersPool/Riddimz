@@ -162,3 +162,27 @@ Potential for revenue streams: The app could generate revenue through the sale o
 Transparency and security: The use of blockchain technology can provide increased transparency and security for transactions within the app.
 
 Community building: NFTs can foster a sense of community and engagement among users of the app, as they can collect and trade unique digital assets with each other.
+
+# SUBCRIBBERS BENEFIT
+
+how to create and empower users of an online karoake app on web3 using nfts
+To create and empower users of an online karaoke app on web3 using NFTs, several steps can be taken:
+
+Build a user-friendly interface: The app should be easy to navigate and understand for users of all technical abilities.
+
+Implement a system for creating and uploading NFTs: Users should be able to easily record and upload their karaoke performances as NFTs, with clear instructions on how to do so.
+
+Allow for buying, selling and trading of NFTs: Users should be able to buy, sell, and trade their NFTs on the app's marketplace. This will allow them to monetize their performances and gain recognition for their talents.
+
+Create a community of users: Encourage users to interact and engage with each other by implementing features such as social media-like functionality, leaderboards, and competitions.
+
+Provide educational resources: Offer resources such as guides, tutorials, and webinars to educate users on how to use the app and the benefits of using NFTs.
+
+Give users control over their NFTs: Allow users to set their own prices, control distribution and use of their NFTs.
+
+Use smart contract for transactions: Use smart contract for transactions to ensure fairness and transparency in the marketplace.
+
+By following these steps, users of the online karaoke app will be empowered to monetize their performances, gain recognition for their talents, and engage with a community of like-minded individuals.
+
+# GOALS
+The goal of an online karaoke app built on blockchain technology using non-fungible tokens (NFTs) would likely be to create a decentralized platform for users to share and monetize their karaoke performances. The purpose of using NFTs would be to allow for the creation of unique digital assets (such as karaoke videos) that can be bought, sold, and traded on the blockchain. This would provide a new revenue stream for users and allow them to gain recognition and ownership of their performances. Additionally, the use of blockchain technology would provide a secure and transparent way to manage the ownership and distribution of these digital assets.
