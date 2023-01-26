@@ -2,7 +2,12 @@
 Riddimz is a decentralized karaoke app built on Stacks blockchain. It utilizes smart contracts and decentralized network of nodes to handle transactions, data storage and user interactions securely and transparently. Users can share and interact with karaoke-related content without relying on a central authority.
 
 # About
-Riddimz is a web3 karaoke project powered by Stacks using NFTs (non-fungible tokens) would offer a unique and innovative way for users to participate in and engage with karaoke online.
+
+Riddimz is a web3 karaoke project built on Stacks using NFTs! This project allows users to create and share their own karaoke videos and earn royalties through the use of non-fungible tokens. We are excited to bring this unique and innovative experience to the blockchain community and we look forward to seeing all the amazing karaoke performances that will be shared on our platform. Thank you for your interest and we can't wait for you to join us on this journey!, Also there are plans on implementing a physical Web3 karaoke studio to market NFTs and stacks to our customers
+
+# ROADMAP
+
+Riddimz is a web3 karaoke project powered by Stacks using NFTs, It will offer a unique and innovative way for users to participate in and engage with karaoke online.
 
 The project would leverage the blockchain technology of Stacks to create a decentralized platform for karaoke. Users would be able to purchase and own NFTs that represent a specific karaoke song, and then use them to participate in karaoke sessions on the platform.
 
