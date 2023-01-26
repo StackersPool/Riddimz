@@ -75,13 +75,6 @@ It's worth noting that this is a high level overview of the technical requiremen
 
 There are several blockchain networks that could be suitable for a web3 project, and the best choice would depend on the specific needs and requirements of the project. However, some of the most popular and widely used blockchain networks for web3 projects include:
 
-Ethereum: Ethereum is the most popular choice for web3 projects due to its large developer community and the availability of a wide range of tools and resources. It also supports a variety of token standards, such as ERC-20 and ERC-721, which can be used to create and manage non-fungible tokens (NFTs). However, scalability is a major concern on Ethereum, and as the network has grown, the cost of transactions has become a significant obstacle for many projects.
-
-Binance Smart Chain (BSC): Binance Smart Chain is a high-performance blockchain network that is fully compatible with Ethereum's tools and development ecosystem. BSC is faster and cheaper than Ethereum, making it more suitable for high-throughput applications and projects that require low transaction costs.
-
-Polygon (formerly Matic Network): Polygon is a layer 2 scaling solution that allows for fast and inexpensive transactions on Ethereum. It provides a high-performance alternative to Ethereum, allowing for faster and cheaper transactions, and it also supports a wide range of token standards, such as ERC-20 and ERC-721.
-
-Solana: Solana is a high-performance blockchain network that can handle over 65,000 transactions per second, making it one of the most scalable blockchain networks available. It also has a very low transaction cost, making it suitable for projects that require high throughput and low transaction costs.
 
 Ultimately, the best blockchain network for a web3 project will depend on the specific use case, the target audience, and the scalability, security, and cost requirements of the project. It's important to thoroughly evaluate the different options and choose the one that is most suitable for the project's needs.
 
