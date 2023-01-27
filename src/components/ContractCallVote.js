@@ -72,7 +72,7 @@ const ContractCallVote = ({ mdData }) => {
         </Grid>
       </Box>
 
-      <p>
+      {/* <p>
 
       </p>
       <p>Vote via Smart Contract</p>
@@ -81,7 +81,7 @@ const ContractCallVote = ({ mdData }) => {
       </button>
       <button disabled={true} className="Vote" onClick={() => vote("🍎")}>
         Vote for 🍎
-      </button>
+      </button> */}
     </div>
   );
 };
