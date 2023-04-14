@@ -30,14 +30,13 @@ function LandingPage(props) {
             </div>
             <div className='content'>
                 <div class="row">
-                    <h4>The first web3 karaoke platform on the Stacks blockchain. 
-                    <br/><br/>Sing, socialize, and enjoy the benefits of decentralized technology. 
-                    <br/><br/>Join our community and experience the future of entertainment.
-
+                    <h4>The first web3 karaoke platform on the Stacks blockchain.
+                        <br /><br />Sing, socialize, and enjoy the benefits of decentralized technology.
+                        <br /><br />Join our community and experience the future of entertainment.
                     </h4>
                 </div>
             </div>
-            {/* Footer */}<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+            {/* Footer */}
             <footer>
                 All rights reserved. Copyright © 2023 Riddimz.
             </footer>
