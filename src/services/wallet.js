@@ -1,46 +1,30 @@
-import React from "react";
-import { AppConfig, showConnect, UserSession } from "@stacks/connect";
+import { showConnect, UserSession, AppConfig } from '@stacks/connect-react'
+import { StacksMainnet, StacksTestnet } from '@stacks/network'
+const AppName = 'Riddimz';
 
-const appConfig = new AppConfig(["store_write", "publish_data"]);
-
+const appConfig = new AppConfig(['store_write', 'publish_data']);
 export const userSession = new UserSession({ appConfig });
+export const wallet = {
+  login: () => {
+    showConnect({
+      appDetails: {
+        name: AppName,
+        icon: `${window.location.origin}/logo.jpg`
+      },
+      redirectTo: '/',
+      onFinish: (data) => {
+        let userData = userSession.loadUserData();
+        console.log("Connection success", data)
+      },
+      onCancel: () => {
+        console.log("Connection aborted")
+      },
+      userSession: userSession,
+    })
+  },
 
-function authenticate() {
-  showConnect({
-    appDetails: {
-      name: "Reddimz",
-      icon: window.location.origin + "/logo_64x64.jpeg",
-    },
-    redirectTo: "/",
-    onFinish: () => {
-      window.location.reload();
-    },
-    userSession,
-  });
-}
+  logout: () => {
 
-function disconnect() {
-  userSession.signUserOut("/");
-}
-
-const ConnectWallet = () => {
-  if (userSession.isUserSignedIn()) {
-    return (
-      <div>
-        <button className="Connect" onClick={disconnect}>
-          Disconnect Wallet
-        </button>
-        <p>mainnet: {userSession.loadUserData().profile.stxAddress.mainnet}</p>
-        <p>testnet: {userSession.loadUserData().profile.stxAddress.testnet}</p>
-      </div>
-    );
   }
 
-  return (
-    <button className="Connect" onClick={authenticate}>
-      Connect Wallet
-    </button>
-  );
-};
-
-export default ConnectWallet;
+}
