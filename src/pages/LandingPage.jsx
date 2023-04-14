@@ -30,9 +30,10 @@ function LandingPage(props) {
             </div>
             <div className='content'>
                 <div class="row">
-                    <h4>The first web3 karaoke platform on the Stacks blockchain.
-                        <br /><br />Sing, socialize, and enjoy the benefits of decentralized technology.
+                    <h4>Your first <span>Web3</span> karaoke platform on the Stacks blockchain,
+                        <br /><br />sing, socialize, and enjoy the benefits of decentralized technology.
                         <br /><br />Join our community and experience the future of entertainment.
+                        <br /><br /><button type='button '>Join</button>
                     </h4>
                 </div>
             </div>
