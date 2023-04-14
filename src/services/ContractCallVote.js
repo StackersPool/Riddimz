@@ -5,7 +5,7 @@ import {
   PostConditionMode,
   stringUtf8CV,
 } from "@stacks/transactions";
-import { userSession } from "./ConnectWallet";
+import { userSession } from "../services/ConnectWallet";
 import Markdown from 'markdown-to-jsx';
 import Grid from '@mui/material/Grid';
 import Paper from '@mui/material/Paper';

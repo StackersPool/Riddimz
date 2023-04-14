@@ -3,9 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@emotion/react": "^11.10.5",
-    "@emotion/styled": "^11.10.5",
-    "@mui/material": "^5.11.6",
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
+    "@fontsource/roboto": "^4.5.8",
+    "@mui/icons-material": "^5.11.16",
+    "@mui/material": "^5.12.0",
+    "@mui/styled-engine-sc": "^5.12.0",
     "@stacks/connect": "^7.0.0",
     "@stacks/connect-react": "^20.0.0",
     "@stacks/network": "^5.0.0",
@@ -17,7 +20,9 @@
     "markdown-to-jsx": "^7.1.8",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
-    "react-scripts": "5.0.1"
+    "react-router-dom": "^6.10.0",
+    "react-scripts": "5.0.1",
+    "styled-components": "^5.3.9"
   },
   "overrides": {
     "nth-check": "2.0.1"

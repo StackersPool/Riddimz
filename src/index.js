@@ -1,30 +1,15 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import "./index.css";
-import App from "./App";
+import * as React from "react";
+import { createRoot } from "react-dom/client";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import LandingPage from "./pages/LandingPage";
 
-import { Connect } from "@stacks/connect-react";
+const root = createRoot(document.getElementById("root"));
 
-import { userSession } from "./components/ConnectWallet";
-
-const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
-    <Connect
-      authOptions={{
-        appDetails: {
-          name: "Stacks React Template",
-          // todo:
-          icon: window.location.origin + "/logo.png",
-        },
-        redirectTo: "/",
-        onFinish: () => {
-          window.location.reload();
-        },
-        userSession,
-      }}
-    >
-      <App />
-    </Connect>
-  </React.StrictMode>
+  <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<LandingPage />} />
+      <Route path="/feeds" element={<LandingPage />} />
+    </Routes>
+  </BrowserRouter>
 );
