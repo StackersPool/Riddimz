@@ -95,13 +95,7 @@ export default function DashBoardHeader() {
             >
               <MenuIcon />
             </IconButton>
-            <Typography
-              variant="h6"
-              noWrap
-              component="div"
-              sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
-            >
-            </Typography>
+            <Typography variant="h6" noWrap component="div" sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }} />
             <Search>
               <SearchIconWrapper>
                 <SearchIcon />
@@ -111,6 +105,9 @@ export default function DashBoardHeader() {
                 inputProps={{ 'aria-label': 'search' }}
               />
             </Search>
+            <div>
+              <IconButton size="small" aria-controls="menu-appbar" aria-haspopup="false" color="inherit" />
+            </div>
             {userSession.isUserSignedIn() && (
               <div>
                 <IconButton
