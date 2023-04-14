@@ -6493,6 +6493,11 @@
     "import-local" "^3.0.2"
     "jest-cli" "^27.5.1"
 
+"jquery@^3.5.0":
+  "integrity" "sha512-Xb7SVYMvygPxbFMpTFQiHh1J7HClEaThguL15N/Gg37Lri/qKyhRGZYzHRyLH8Stq3Aow0LsHO2O2ci86fCrNQ=="
+  "resolved" "https://registry.npmjs.org/jquery/-/jquery-3.5.0.tgz"
+  "version" "3.5.0"
+
 "js-sdsl@^4.1.4":
   "integrity" "sha512-mifzlm2+5nZ+lEcLJMoBK0/IH/bDg8XnJfd/Wq6IP+xoCjLZsTOnV2QpxlVbX9bMnkl5PdEjNtBJ9Cj1NjifhQ=="
   "resolved" "https://registry.npmjs.org/js-sdsl/-/js-sdsl-4.3.0.tgz"
@@ -7365,6 +7370,11 @@
   "version" "3.1.0"
   dependencies:
     "find-up" "^3.0.0"
+
+"popper.js@^1.16.1":
+  "integrity" "sha512-Wb4p1J4zyFTbM+u6WuO4XstYx4Ky9Cewe4DWrel7B0w6VVICvPwdOpotjzcf6eD8TsckVnIMNONQyPIUFOUbCQ=="
+  "resolved" "https://registry.npmjs.org/popper.js/-/popper.js-1.16.1.tgz"
+  "version" "1.16.1"
 
 "postcss-attribute-case-insensitive@^5.0.2":
   "integrity" "sha512-XIidXV8fDr0kKt28vqki84fRK8VW8eTuIa4PChv2MqKuT6C9UjmSKzen6KaWhWEoYvwxFCa7n/tC1SZ3tyq4SQ=="
