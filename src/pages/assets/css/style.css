@@ -1,6 +1,12 @@
-* {
+*{
+  margin: 0;
+}
+.container {
   padding: 0;
   margin: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
   box-sizing: border-box;
   font-family: 'Josefin Sans', sans-serif;
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/background-image.jpg);
@@ -8,12 +14,6 @@
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-}
-
-.container {
-  height: 100vh;
-  width: 100%;
-  position: absolute;
 }
 
 /* Header Starts Here */

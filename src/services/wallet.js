@@ -14,7 +14,7 @@ export const wallet = {
       redirectTo: '/',
       onFinish: (data) => {
         let userData = userSession.loadUserData();
-        console.log("Connection success", data)
+        window.location.reload();
       },
       onCancel: () => {
         console.log("Connection aborted")
@@ -24,7 +24,8 @@ export const wallet = {
   },
 
   logout: () => {
-
+    userSession.signUserOut()
+    window.location.replace('/');
   }
 
 }
