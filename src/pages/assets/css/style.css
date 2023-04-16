@@ -1,6 +1,21 @@
-*{
+* {
   margin: 0;
 }
+
+audio {
+  width: 250px;  
+  height: 250px;
+}
+
+video {
+  width: 250px;
+  height: 250px;
+}
+
+.dashboardheadercontent{
+  margin-top: 10px;
+}
+
 .container {
   padding: 0;
   margin: 0;

@@ -14,60 +14,29 @@ import Menu from '@mui/material/Menu';
 import SearchIcon from '@mui/icons-material/Search';
 import { userSession, wallet } from '../../services/wallet';
 
-const Search = styled('div')(({ theme }) => ({
-  position: 'relative',
-  borderRadius: theme.shape.borderRadius,
-  backgroundColor: alpha(theme.palette.common.white, 0.15),
-  '&:hover': {
-    backgroundColor: alpha(theme.palette.common.white, 0.25),
-  },
-  marginLeft: 0,
-  width: '100%',
-  [theme.breakpoints.up('sm')]: {
-    marginLeft: theme.spacing(1),
-    width: 'auto',
-  },
-}));
+import { useTheme } from '@mui/material/styles';
+import Zoom from '@mui/material/Zoom';
+import Fab from '@mui/material/Fab';
+import UpIcon from '@mui/icons-material/KeyboardArrowUp';
+import { green } from '@mui/material/colors';
+import AddIcon from '@mui/icons-material/Add';
+import EditIcon from '@mui/icons-material/Edit';
+const fabStyle = { position: 'fixed', bottom: 16, right: 16, };
+const fabGreenStyle = { color: 'common.white', bgcolor: green[500], '&:hover': { bgcolor: green[600], }, };
+const fabs = [{ color: 'primary', sx: fabStyle, icon: <AddIcon />, label: 'Add', },];
 
-const SearchIconWrapper = styled('div')(({ theme }) => ({
-  padding: theme.spacing(0, 2),
-  height: '100%',
-  position: 'absolute',
-  pointerEvents: 'none',
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'center',
-}));
-
-const StyledInputBase = styled(InputBase)(({ theme }) => ({
-  color: 'inherit',
-  '& .MuiInputBase-input': {
-    padding: theme.spacing(1, 1, 1, 0),
-    // vertical padding + font size from searchIcon
-    paddingLeft: `calc(1em + ${theme.spacing(4)})`,
-    transition: theme.transitions.create('width'),
-    width: '100%',
-    [theme.breakpoints.up('sm')]: {
-      width: '12ch',
-      '&:focus': {
-        width: '20ch',
-      },
-    },
-  },
-}));
-
-const darkTheme = createTheme({
-  palette: {
-    mode: 'dark',
-    primary: {
-      main: '#1976d2',
-    },
-  },
-});
+const Search = styled('div')(({ theme }) => ({ position: 'relative', borderRadius: theme.shape.borderRadius, backgroundColor: alpha(theme.palette.common.white, 0.15), '&:hover': { backgroundColor: alpha(theme.palette.common.white, 0.25), }, marginLeft: 0, width: '100%', [theme.breakpoints.up('sm')]: { marginLeft: theme.spacing(1), width: 'auto', }, }));
+const SearchIconWrapper = styled('div')(({ theme }) => ({ padding: theme.spacing(0, 2), height: '100%', position: 'absolute', pointerEvents: 'none', display: 'flex', alignItems: 'center', justifyContent: 'center', }));
+const StyledInputBase = styled(InputBase)(({ theme }) => ({ color: 'inherit', '& .MuiInputBase-input': { padding: theme.spacing(1, 1, 1, 0), paddingLeft: `calc(1em + ${theme.spacing(4)})`, transition: theme.transitions.create('width'), width: '100%', [theme.breakpoints.up('sm')]: { width: '12ch', '&:focus': { width: '20ch', }, }, }, }));
+const darkTheme = createTheme({ palette: { mode: 'dark', primary: { main: '#1976d2', }, }, });
 
 export default function DashBoardHeader() {
   const [auth, setAuth] = React.useState(true);
   const [anchorEl, setAnchorEl] = React.useState(null);
+  const [value, setValue] = React.useState(0);
+
+  const theme = useTheme();
+  const transitionDuration = { enter: theme.transitions.duration.enteringScreen, exit: theme.transitions.duration.leavingScreen, };
 
   const handleChange = (event) => {
     setAuth(event.target.checked);
@@ -142,6 +111,21 @@ export default function DashBoardHeader() {
               </div>
             )}
           </Toolbar>
+          {fabs.map((fab, index) => (
+            <Zoom
+              key={fab.color}
+              in={value === index}
+              timeout={transitionDuration}
+              style={{
+                transitionDelay: `${value === index ? transitionDuration.exit : 0}ms`,
+              }}
+              unmountOnExit
+            >
+              <Fab sx={fab.sx} aria-label={fab.label} color={fab.color}>
+                {fab.icon}
+              </Fab>
+            </Zoom>
+          ))}
         </AppBar>
       </ThemeProvider>
 
