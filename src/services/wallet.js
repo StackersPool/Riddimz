@@ -1,4 +1,4 @@
-import { showConnect, UserSession, AppConfig, openContractCall } from '@stacks/connect-react'
+import { showConnect, UserSession, AppConfig, openContractCall, openContractDeploy } from '@stacks/connect-react'
 import { StacksMainnet, StacksTestnet } from '@stacks/network'
 import { Storage } from '@stacks/storage'
 import { stringAsciiCV } from '@stacks/transactions';
@@ -50,9 +50,9 @@ export const wallet = {
               const tx_sender = userSession.loadUserData().profile.stxAddress.testnet;
               console.log(tx_sender);
               openContractCall({
-                contractAddress: tx_sender,
-                contractName: 'karoake-feed',
-                functionName: 'create-karaoke',
+                contractAddress: 'STT4SQP5RC1BFAJEQKBHZMXQ8NQ7G118F0XRWTMV.test-riddimz',
+                contractName: 'test-riddimz',
+                functionName: 'post-performance',
                 functionArgs: [stringAsciiCV(caption), stringAsciiCV(`${type}/${fileName}`)],
                 network: new StacksTestnet(),
                 appDetails: {
@@ -76,6 +76,19 @@ export const wallet = {
         })
       }
       reader.readAsArrayBuffer(file[0]);
+    },
+    deployContract: (codeBody, contractname) => {
+      openContractDeploy({
+        contractName: contractname,
+        codeBody,
+        appDetails: {
+          name: AppName,
+          icon: AppIcon,
+        },
+        onFinish: ({txId}) => {
+          window.open(`https://explorer.hiro.so/txid/${txId}?chain=testnet`, '_blank');
+        },
+      });
     }
   }
 }
@@ -101,4 +114,13 @@ export const deleteStored = async (fileName) => {
     return { success: false, result: {} }
 
   }
+}
+
+export const getPerfomance = () => {
+  const publisher = 'blend.btc';
+  const caption = 'Hello Riddimz';
+  const type = 'video';
+  const uri = 'https://www.youtube.com/shorts/oV1rWHt1Lj0';
+  const txId = 'djkhgkjsvjkgdvisbudytsuifjweo3u897983h4oih3894';
+  return [{ publisher, caption, type, uri, txId }];
 }

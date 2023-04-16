@@ -32,7 +32,7 @@ const CreateKaroake = ({ open, close }) => {
                     </Typography>
                     <TextField id="standard-multiline-flexible" label="Add a caption..." multiline maxRows={4} variant="standard" onInput={handleInputChange} />
                     <IconButton color="primary" aria-label="upload picture" component="label" sx={{ margin: 2 }}>
-                        <input hidden accept="image/*" type="file" ref={file} />
+                        <input hidden accept="video/*" type="file" ref={file} />
                         <AttachFileIcon />
                     </IconButton>
                     <Button variant="contained" color='warning' endIcon={<SendIcon color='primary' />} onClick={handleCreateKaraoke}>

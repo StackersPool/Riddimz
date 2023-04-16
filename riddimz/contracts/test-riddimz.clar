@@ -1,10 +1,7 @@
-
 ;; title: riddimz
 ;; version:
 ;; summary: a web3 karaoke platform
 ;; description:
-
-(use-trait nft-trait 'SP2PABAF9FTAJYNFZH93XENAJ8FVY99RRM50D2JG9.nft-trait.nft-trait)
 
 (define-constant contract-address tx-sender)
 (define-constant ERR_ALREADY_REGISTERED (err u100))
@@ -25,7 +22,7 @@
 )
 
 ;; the asset must be a music or video nft
-(define-public (post-asset (asset <nft-trait>) (type (string-ascii 5))) 
+(define-public (post-asset (asset principal) (type (string-ascii 5))) 
   (let
     (
       (user (unwrap! (map-get? registered-users tx-sender) ERR_NOT_REGISTERED))
@@ -34,7 +31,7 @@
     )
     (asserts! (is-eq (get registered user) true) ERR_NOT_REGISTERED)
     ;; #[filter(asset)]
-    (map-set users-content (contract-of asset) new)
+    (map-set users-content asset new)
     (ok true)
   )
 )
@@ -51,6 +48,6 @@
   )
 )
 
-(define-public (create-karaoke (caption (string-ascii 250)) (attachment (string-ascii 100))) 
+(define-public (post-performance (caption (string-ascii 250)) (attachment (string-ascii 100))) 
   (ok (print {event: "create-karaoke", publisher: tx-sender, caption: caption, attachment: attachment}))
 )

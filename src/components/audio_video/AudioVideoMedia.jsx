@@ -1,3 +1,4 @@
+import { Typography } from '@mui/material';
 import React from 'react';
 
 const AudioVideoMedia = ({ type, uri, caption }) => {
@@ -9,14 +10,16 @@ const AudioVideoMedia = ({ type, uri, caption }) => {
     case 'video':
       attachment = <video controls><source src={uri} type="video/mp4" />Your browser does not support the video element.</video>;
       break;
-    default:
+    case 'image':
       attachment = <img src={uri} />
+      break;
+    default:
       break;
   }
   return (
     <div>
       {attachment}
-      <p>{caption}</p>
+      <Typography>{caption}</Typography>
     </div>
   );
 }
