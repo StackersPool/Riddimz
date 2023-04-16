@@ -15,7 +15,7 @@ function LandingPage(props) {
                 <img className='logo' src={logo} alt="logo" />
                 <ul>
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">Docs</a></li>
+                    <li><a href="https://cryptosmiths-organization.gitbook.io/riddimz-doc/">Docs</a></li>
                     <li><a href="#">Contact Us</a></li>
                 </ul>
                 <button onClick={() => wallet.login()} type='button'>Connect</button>

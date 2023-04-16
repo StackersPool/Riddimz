@@ -1755,12 +1755,12 @@
   dependencies:
     "eslint-scope" "5.1.1"
 
-"@noble/hashes@^1.0.0", "@noble/hashes@^1.1.2", "@noble/hashes@^1.1.3", "@noble/hashes@~1.1.1":
+"@noble/hashes@^1.0.0", "@noble/hashes@^1.1.2", "@noble/hashes@^1.1.3", "@noble/hashes@~1.1.1", "@noble/hashes@1.1.5":
   "integrity" "sha512-LTMZiiLc+V4v1Yi16TD6aX2gmtKszNye0pQgbaLqkvhIqP7nVsSaJsWloGQjJfJ8offaoP5GtX3yY5swbcJxxQ=="
   "resolved" "https://registry.npmjs.org/@noble/hashes/-/hashes-1.1.5.tgz"
   "version" "1.1.5"
 
-"@noble/secp256k1@^1.5.5", "@noble/secp256k1@^1.6.3":
+"@noble/secp256k1@^1.5.5", "@noble/secp256k1@^1.6.3", "@noble/secp256k1@1.7.1":
   "integrity" "sha512-hOUk6AyBFmqVrv7k5WAw/LpszxVbj9gGN4JRkIX52fdFAj1UA61KXmZDvqVEm+pOyec3+fIeZB02LYa/pWOArw=="
   "resolved" "https://registry.npmjs.org/@noble/secp256k1/-/secp256k1-1.7.1.tgz"
   "version" "1.7.1"
@@ -1858,7 +1858,7 @@
   "resolved" "https://registry.npmjs.org/@scure/base/-/base-1.1.1.tgz"
   "version" "1.1.1"
 
-"@scure/bip39@^1.1.0":
+"@scure/bip39@^1.1.0", "@scure/bip39@1.1.0":
   "integrity" "sha512-pwrPOS16VeTKg98dYXQyIjJEcWfz7/1YJIwxUEPFfQPtc86Ym/1sVgQ2RLoD43AazMk2l/unK4ITySSpW2+82w=="
   "resolved" "https://registry.npmjs.org/@scure/bip39/-/bip39-1.1.0.tgz"
   "version" "1.1.0"
@@ -1903,18 +1903,17 @@
     "jsontokens" "^4.0.1"
     "query-string" "^6.13.1"
 
-"@stacks/auth@^6.0.0":
-  "integrity" "sha512-KVA4IJqY00gydx+UFrYbO3fdwwcVt21QFnCeUJShQjK8XB1LUtpex+qKpYMMQlu5GVf0rWcjBOZK5jXGc/ho1Q=="
-  "resolved" "https://registry.npmjs.org/@stacks/auth/-/auth-6.1.0.tgz"
-  "version" "6.1.0"
+"@stacks/auth@^6.0.0", "@stacks/auth@^6.3.0":
+  "integrity" "sha512-FwBxzwXYS0UFd0LPeDlHfNw8UqJHJQoG41mCkSXva8Y1/9WK0dOGzq0T5Bdn+Gf34ee0Kp91OF68qoWVDhgdqQ=="
+  "resolved" "https://registry.npmjs.org/@stacks/auth/-/auth-6.3.0.tgz"
+  "version" "6.3.0"
   dependencies:
     "@stacks/common" "^6.0.0"
-    "@stacks/encryption" "^6.1.0"
-    "@stacks/network" "^6.1.0"
-    "@stacks/profile" "^6.1.0"
+    "@stacks/encryption" "^6.3.0"
+    "@stacks/network" "^6.3.0"
+    "@stacks/profile" "^6.3.0"
     "cross-fetch" "^3.1.5"
     "jsontokens" "^4.0.1"
-    "query-string" "^6.13.1"
 
 "@stacks/common@^5.0.3":
   "integrity" "sha512-0c1L1xQAFI4p0oB8BrwU1ic3q91plceztzT6ZQizxWfAJFnELdYyO/nJlq9a3yIVV90iaLYgvYBTPW3b7LWrdg=="
@@ -1991,14 +1990,14 @@
     "ripemd160-min" "^0.0.6"
     "varuint-bitcoin" "^1.1.2"
 
-"@stacks/encryption@^6.1.0":
-  "integrity" "sha512-qyv/ncOVWBbctiPoC1LQ1uKGSEpAXNnDd6Jhyz1BV5ieXiwRvERunk7Iuljyoefdv2s2NKOLN5GvJc6soLHK9A=="
-  "resolved" "https://registry.npmjs.org/@stacks/encryption/-/encryption-6.1.0.tgz"
-  "version" "6.1.0"
+"@stacks/encryption@^6.3.0":
+  "integrity" "sha512-QE1+gy1x6spGkpK5PnZxKoX1hL8eeIYxYa5HNMl4cbdIVKaFgqjoGFKMtTA/tQMc91T/saXLqbQLyh/U4AVpTA=="
+  "resolved" "https://registry.npmjs.org/@stacks/encryption/-/encryption-6.5.0.tgz"
+  "version" "6.5.0"
   dependencies:
-    "@noble/hashes" "^1.1.3"
-    "@noble/secp256k1" "^1.6.3"
-    "@scure/bip39" "^1.1.0"
+    "@noble/hashes" "1.1.5"
+    "@noble/secp256k1" "1.7.1"
+    "@scure/bip39" "1.1.0"
     "@stacks/common" "^6.0.0"
     "@types/node" "^18.0.4"
     "base64-js" "^1.5.1"
@@ -2022,6 +2021,14 @@
     "@stacks/common" "^6.0.0"
     "cross-fetch" "^3.1.5"
 
+"@stacks/network@^6.3.0":
+  "integrity" "sha512-573ZldQ+Iy0nCCxprXLLvkAo1AMEXncfmMUvqQ+5TN3m7VqCVADtb5G5WzMZsyR4m/k9oPsv076Lmqyl8AtR2A=="
+  "resolved" "https://registry.npmjs.org/@stacks/network/-/network-6.3.0.tgz"
+  "version" "6.3.0"
+  dependencies:
+    "@stacks/common" "^6.0.0"
+    "cross-fetch" "^3.1.5"
+
 "@stacks/prettier-config@0.0.8":
   "integrity" "sha512-WpxCIB2wPk2TT0Zs9oABNQ7Y2wBx2sSqEeFtgJ1lBNY6bKT5B82l/CkbaHPmnUj0KOwauXaSv0rXnxomTNj9xA=="
   "resolved" "https://registry.npmjs.org/@stacks/prettier-config/-/prettier-config-0.0.8.tgz"
@@ -2041,17 +2048,29 @@
     "schema-inspector" "2.0.1"
     "zone-file" "^2.0.0-beta.3"
 
-"@stacks/profile@^6.0.0", "@stacks/profile@^6.1.0":
-  "integrity" "sha512-jvFzTKlfC8HrBU6g2qScJ24SJ+o4/0Ae4ad0Etf+SJrfY6Ma2xXL9b5lOejKK4PYYHo1RsO1s/kARib9NeL93A=="
-  "resolved" "https://registry.npmjs.org/@stacks/profile/-/profile-6.1.0.tgz"
-  "version" "6.1.0"
+"@stacks/profile@^6.0.0", "@stacks/profile@^6.3.0":
+  "integrity" "sha512-vN0TJi/Vf/h41KskJhb0I5vf6U4vDxxSfjJBvfF/xnl5xvFVVgN4Ikctf4ftE9LbgWV3/WRNm/xFnvdOCqOPRQ=="
+  "resolved" "https://registry.npmjs.org/@stacks/profile/-/profile-6.5.0.tgz"
+  "version" "6.5.0"
   dependencies:
     "@stacks/common" "^6.0.0"
-    "@stacks/network" "^6.1.0"
-    "@stacks/transactions" "^6.1.0"
+    "@stacks/network" "^6.3.0"
+    "@stacks/transactions" "^6.5.0"
     "jsontokens" "^4.0.1"
-    "schema-inspector" "2.0.1"
+    "schema-inspector" "^2.0.2"
     "zone-file" "^2.0.0-beta.3"
+
+"@stacks/storage@^6.3.0":
+  "integrity" "sha512-faz8sc9aq9g/Hzn0BjBPQ4+gkEBSQwSn67R68GC4K+v4OPrt26WepHbYWdzLwq8BRcnULJfqLK5yksUWYXyAnQ=="
+  "resolved" "https://registry.npmjs.org/@stacks/storage/-/storage-6.3.0.tgz"
+  "version" "6.3.0"
+  dependencies:
+    "@stacks/auth" "^6.3.0"
+    "@stacks/common" "^6.0.0"
+    "@stacks/encryption" "^6.3.0"
+    "@stacks/network" "^6.3.0"
+    "base64-js" "^1.5.1"
+    "jsontokens" "^4.0.1"
 
 "@stacks/transactions@^5.0.0", "@stacks/transactions@^5.0.1", "@stacks/transactions@^5.0.3":
   "integrity" "sha512-rLe7QYU+tzTs1Yudo82zh7oiWAwGxGiunFehgIZ6VgLgo/Oarf8+DWmmaAxSZpCsecxl4cuQxE3bDWwJZAA9rg=="
@@ -2077,15 +2096,15 @@
     "c32check" "^2.0.0"
     "lodash.clonedeep" "^4.5.0"
 
-"@stacks/transactions@^6.1.0":
-  "integrity" "sha512-5+6M6wvUiO3HQAWP77y80crJXtoDHaiirY3dnwrkUCwJD/021JRYDNCzeW8QDrtAaAlpCcmtjUh/Nv8Vwtb4mg=="
-  "resolved" "https://registry.npmjs.org/@stacks/transactions/-/transactions-6.1.0.tgz"
-  "version" "6.1.0"
+"@stacks/transactions@^6.5.0":
+  "integrity" "sha512-kwE8cZq+QdAum4/LC+lSlAXVvzkdsSHTkCbfg4+VCWPBqA+gdXEqZe6R9SNBtMb8yGQrqUY8uIGRLVCWcXJ8zQ=="
+  "resolved" "https://registry.npmjs.org/@stacks/transactions/-/transactions-6.5.0.tgz"
+  "version" "6.5.0"
   dependencies:
-    "@noble/hashes" "^1.1.3"
-    "@noble/secp256k1" "^1.6.3"
+    "@noble/hashes" "1.1.5"
+    "@noble/secp256k1" "1.7.1"
     "@stacks/common" "^6.0.0"
-    "@stacks/network" "^6.1.0"
+    "@stacks/network" "^6.3.0"
     "c32check" "^2.0.0"
     "lodash.clonedeep" "^4.5.0"
 
@@ -8585,6 +8604,13 @@
   "version" "0.23.0"
   dependencies:
     "loose-envify" "^1.1.0"
+
+"schema-inspector@^2.0.2":
+  "integrity" "sha512-phq0/I55VGzl4kmq3Tp1jlY75Xtc1o7wfGmOEFTgGyucI6zIdEsiM7MJu9jjQf2SfMreqSbTi/ktUsEMs6pV7A=="
+  "resolved" "https://registry.npmjs.org/schema-inspector/-/schema-inspector-2.0.2.tgz"
+  "version" "2.0.2"
+  dependencies:
+    "async" "~2.6.3"
 
 "schema-inspector@2.0.1":
   "integrity" "sha512-lqR4tOVfoqf9Z8cgX/zvXuWPnTWCqrc4WSgeSPDDc1bWbMABaqdSTY98xj7iRKHOIRtKjc4M8EWCgUu5ASlHkg=="
