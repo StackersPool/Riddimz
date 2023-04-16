@@ -2,7 +2,7 @@ import { showConnect, UserSession, AppConfig, openContractCall, openContractDepl
 import { StacksMainnet, StacksTestnet } from '@stacks/network'
 import { Storage } from '@stacks/storage'
 import { stringAsciiCV } from '@stacks/transactions';
-import { principalCV } from '@stacks/transactions/dist/clarity/types/principalCV';
+import axios from "axios"
 const AppName = 'Riddimz';
 const AppIcon = `${window.location.origin}/logo.jpg`;
 
@@ -38,44 +38,48 @@ export const wallet = {
 
   transactions: {
     createKaraoke: (caption, file) => {
-      reader.onload = async function () {
-        const { type, name } = file[0];
-        const fileName = `${Date.now()}.${String(name).split('.').pop().toLowerCase()}`;
-        var fileContent = reader.result;
-        console.log(fileContent)
-        console.log(fileContent, fileName + ' ' + name);
-        store({ fileContent, fileName }, { encrypt: false }).then(({ result, success }) => {
-          switch (success) {
-            case true:
-              const tx_sender = userSession.loadUserData().profile.stxAddress.testnet;
-              console.log(tx_sender);
-              openContractCall({
-                contractAddress: 'STT4SQP5RC1BFAJEQKBHZMXQ8NQ7G118F0XRWTMV.test-riddimz',
-                contractName: 'test-riddimz',
-                functionName: 'post-performance',
-                functionArgs: [stringAsciiCV(caption), stringAsciiCV(`${type}/${fileName}`)],
-                network: new StacksTestnet(),
-                appDetails: {
-                  name: AppName,
-                  icon: AppIcon
-                },
-                onFinish: (data) => {
-                  console.log('Transaction succeeded')
-                  window.open(`https://explorer.hiro.so/txid/${data.txId}?chain=testnet`, '_blank')
-                },
-                onCancel: () => {
-                  deleteStored(fileName)
-                  console.log('Transaction Canceled')
-                }
-              })
-              break;
-            default:
-              console.log('Upload failed')
-              break;
-          }
-        })
+      const { type, name } = file[0];
+      if (type.split('/')[0] === 'video') {
+        reader.onload = async function () {
+          const fileName = `${Date.now()}.${String(name).split('.').pop().toLowerCase()}`;
+          var fileContent = reader.result;
+          console.log(fileContent)
+          console.log(fileContent, fileName + ' ' + name);
+          store({ fileContent, fileName }, { encrypt: false }).then(({ result, success }) => {
+            switch (success) {
+              case true:
+                const tx_sender = userSession.loadUserData().profile.stxAddress.testnet;
+                console.log(tx_sender);
+                openContractCall({
+                  contractAddress: 'STT4SQP5RC1BFAJEQKBHZMXQ8NQ7G118F0XRWTMV',
+                  contractName: 'test-riddimz',
+                  functionName: 'post-performance',
+                  functionArgs: [stringAsciiCV(caption), stringAsciiCV(`${type}/${fileName}`)],
+                  network: new StacksTestnet(),
+                  appDetails: {
+                    name: AppName,
+                    icon: AppIcon
+                  },
+                  onFinish: (data) => {
+                    console.log('Transaction succeeded')
+                    window.open(`https://explorer.hiro.so/txid/${data.txId}?chain=testnet`, '_blank')
+                  },
+                  onCancel: () => {
+                    deleteStored(fileName)
+                    console.log('Transaction Canceled')
+                  }
+                })
+                break;
+              default:
+                console.log('Upload failed')
+                break;
+            }
+          })
+        }
+        reader.readAsArrayBuffer(file[0]);
+      } else {
+        console.log("Error: Invalid filetype");
       }
-      reader.readAsArrayBuffer(file[0]);
     },
     deployContract: (codeBody, contractname) => {
       openContractDeploy({
@@ -85,7 +89,7 @@ export const wallet = {
           name: AppName,
           icon: AppIcon,
         },
-        onFinish: ({txId}) => {
+        onFinish: ({ txId }) => {
           window.open(`https://explorer.hiro.so/txid/${txId}?chain=testnet`, '_blank');
         },
       });
@@ -116,11 +120,11 @@ export const deleteStored = async (fileName) => {
   }
 }
 
-export const getPerfomance = () => {
-  const publisher = 'blend.btc';
-  const caption = 'Hello Riddimz';
-  const type = 'video';
-  const uri = 'https://www.youtube.com/shorts/oV1rWHt1Lj0';
-  const txId = 'djkhgkjsvjkgdvisbudytsuifjweo3u897983h4oih3894';
-  return [{ publisher, caption, type, uri, txId }];
+export const getPerfomance = async () => {
+  let result;
+  await axios.get('https://api.testnet.hiro.so/extended/v1/contract/STT4SQP5RC1BFAJEQKBHZMXQ8NQ7G118F0XRWTMV.test-riddimz/events').then(({ data: { results } }) => {
+    result = results
+  })
+  console.log(result)
+  return result;
 }

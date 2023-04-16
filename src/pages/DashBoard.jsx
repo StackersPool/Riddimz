@@ -5,7 +5,7 @@ import Typography from '@mui/material/Typography';
 
 import DashBoardHeader from '../components/dashboard/DashBoardHeader'
 import AudioVideoMedia from '../components/audio_video/AudioVideoMedia';
-import { getPerfomance, wallet } from '../services/wallet';
+import { getPerfomance, userSession, wallet } from '../services/wallet';
 // import { TextField } from '@mui/material';
 
 export default function SpacingGrid() {
@@ -27,7 +27,7 @@ export default function SpacingGrid() {
 
     React.useEffect(() => {
         const loadPerfomance = async () => {
-            const performance = getPerfomance();
+            const performance = await getPerfomance();
             setKaraokeContents(performance)
         }
         loadPerfomance();
@@ -40,17 +40,24 @@ export default function SpacingGrid() {
                 <Grid sx={{ flexGrow: 1 }} container spacing={2}>
                     <Grid item xs={12}>
                         <Grid container justifyContent="center" spacing={spacing}>
-                            {karoakeContents.length > 0 ? karoakeContents.map(({ publisher, caption, type, uri, txId }) => (
-                                <Grid key={txId} item>
-                                    <Paper sx={{ height: 250, width: 250, backgroundColor: (theme) => theme.palette.mode === 'dark' ? '#1A2027' : '#fff', }}>
-                                        <div>
-                                            <AudioVideoMedia type={type} caption={caption} uri={uri} />
-                                            <Typography>Performered by: {publisher}</Typography>
-                                        </div>
-                                    </Paper>
-                                </Grid>
-                            )) : <Grid item><p>Loading</p></Grid>}
+                            {karoakeContents.length > 0 ? karoakeContents.map(({ tx_id, contract_log: { value: { repr } } }) => {
+                                const type = repr.split('(tuple (attachment "')[1].split('") (caption "')[0].split('/')[0];
+                                const uri = userSession.loadUserData().profile.apps[window.location.origin] + repr.split('(tuple (attachment "')[1].split('") (caption "')[0].split('/')[2];
+                                const caption = repr.split('") (caption "')[1].split('") (event "')[0];
+                                const publisher = repr.split(`") (publisher '`)[1].split('))')[0];
+                                return (
+                                    < Grid key={tx_id} item >
+                                        <Paper sx={{ height: 250, width: 250, backgroundColor: (theme) => theme.palette.mode === 'dark' ? '#1A2027' : '#fff', }}>
+                                            <div>
+                                                <AudioVideoMedia type={type} caption={caption} uri={uri} />
+                                                <Typography>Performered by: {`${String(publisher).substring(0, 4)}...${String(publisher).substring(String(publisher).length - 4, String(publisher).length)}`}</Typography>
+                                            </div>
+                                        </Paper>
+                                    </Grid>
+                                )
 
+                            }) : <Grid item><p>Loading</p></Grid>
+                            }
                             {/* <TextField id="standard-multiline-flexible" label="Contract Body..." multiline maxRows={4} variant="standard" onInput={handleCodeBodyInput} />
                             <TextField id="standard-multiline-flexible" label="Contract nam.." maxRows={4} variant="standard" onInput={contractNameInput} />
                             <button onClick={() => wallet.transactions.deployContract(contractBody, contractName)}>Deploy Contract</button> */}
