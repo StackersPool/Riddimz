@@ -53,7 +53,7 @@ export const wallet = {
                 contractAddress: tx_sender,
                 contractName: 'karoake-feed',
                 functionName: 'create-karaoke',
-                functionArgs: [stringAsciiCV(caption), stringAsciiCV(fileName)],
+                functionArgs: [stringAsciiCV(caption), stringAsciiCV(`${type}/${fileName}`)],
                 network: new StacksTestnet(),
                 appDetails: {
                   name: AppName,

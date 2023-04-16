@@ -7,6 +7,7 @@ import AudioVideoMedia from '../components/audio_video/AudioVideoMedia';
 
 export default function SpacingGrid() {
     const [spacing, setSpacing] = React.useState(2);
+    const [karoakeContents, setKaraokeContents] = React.useState([]);
 
     const handleChange = (event) => {
         setSpacing(Number(event.target.value));
@@ -20,15 +21,15 @@ export default function SpacingGrid() {
                 <Grid sx={{ flexGrow: 1 }} container spacing={2}>
                     <Grid item xs={12}>
                         <Grid container justifyContent="center" spacing={spacing}>
-                            {[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11].map((value) => (
-                                <Grid key={value} item>
+                            {karoakeContents.length > 0 ? karoakeContents.map(({ publisher, caption, type, uri, txId }) => (
+                                <Grid key={txId} item>
                                     <Paper sx={{ height: 250, width: 250, backgroundColor: (theme) => theme.palette.mode === 'dark' ? '#1A2027' : '#fff', }}>
                                         <div>
-                                            <AudioVideoMedia />
+                                            <AudioVideoMedia type={type} caption={caption} uri={uri} />
                                         </div>
                                     </Paper>
                                 </Grid>
-                            ))}
+                            )) : <Grid item><p>Loading</p></Grid>}
                         </Grid>
                     </Grid>
                 </Grid>
