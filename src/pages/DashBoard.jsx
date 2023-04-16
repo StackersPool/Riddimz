@@ -23,11 +23,9 @@ export default function SpacingGrid() {
                             {[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11].map((value) => (
                                 <Grid key={value} item>
                                     <Paper sx={{ height: 250, width: 250, backgroundColor: (theme) => theme.palette.mode === 'dark' ? '#1A2027' : '#fff', }}>
-
                                         <div>
                                             <AudioVideoMedia />
                                         </div>
-
                                     </Paper>
                                 </Grid>
                             ))}
