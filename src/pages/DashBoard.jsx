@@ -2,10 +2,12 @@ import * as React from 'react';
 import Grid from '@mui/material/Grid';
 import Paper from '@mui/material/Paper';
 import Typography from '@mui/material/Typography';
+import ReceiptIcon from '@mui/icons-material/Receipt';
 
 import DashBoardHeader from '../components/dashboard/DashBoardHeader'
 import AudioVideoMedia from '../components/audio_video/AudioVideoMedia';
 import { getPerfomance, userSession, wallet } from '../services/wallet';
+import { Button, IconButton } from '@mui/material';
 // import { TextField } from '@mui/material';
 
 export default function SpacingGrid() {
@@ -51,6 +53,9 @@ export default function SpacingGrid() {
                                             <div>
                                                 <AudioVideoMedia type={type} caption={caption} uri={uri} />
                                                 <Typography>Performered by: {`${String(publisher).substring(0, 4)}...${String(publisher).substring(String(publisher).length - 4, String(publisher).length)}`}</Typography>
+                                                <IconButton color="primary" aria-label="upload picture" component="label" sx={{ margin: 0 }} onClick={() => window.open(`https://explorer.hiro.so/txid/${tx_id}?chain=testnet`, '_blank')}>
+                                                    <ReceiptIcon />
+                                                </IconButton>
                                             </div>
                                         </Paper>
                                     </Grid>

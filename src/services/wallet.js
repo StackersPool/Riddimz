@@ -125,6 +125,5 @@ export const getPerfomance = async () => {
   await axios.get('https://api.testnet.hiro.so/extended/v1/contract/STT4SQP5RC1BFAJEQKBHZMXQ8NQ7G118F0XRWTMV.test-riddimz/events').then(({ data: { results } }) => {
     result = results
   })
-  console.log(result)
   return result;
 }
