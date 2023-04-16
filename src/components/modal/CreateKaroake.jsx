@@ -24,13 +24,16 @@ const CreateKaroake = ({ open, close }) => {
                         Let your voice be heard and your creativity shine! 🎤🎶🌟 Get ready to create some unforgettable karaoke content that will have everyone singing along with you!
                     </Typography>
                     <TextField id="standard-multiline-flexible" label="Add a caption..." multiline maxRows={4} variant="standard" />
-                    <IconButton color="primary" aria-label="upload picture" component="label" sx={{ margin:2 }}>
+                    <IconButton color="primary" aria-label="upload picture" component="label" sx={{ margin: 2 }}>
                         <input hidden accept="image/*" type="file" />
                         <AttachFileIcon />
                     </IconButton>
                     <Button variant="contained" color='warning' endIcon={<SendIcon color='primary' />}>
                         Create
                     </Button>
+                    <Typography id="modal-modal-description" align='center' sx={{ mt: 1 }} fontSize={13}>
+                        Powered by Riddimz Karaoke
+                    </Typography>
                 </Box>
             </Modal>
         </div>
